@@ -1,0 +1,83 @@
+/* Estilos para el contenedor principal */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f6f7f8, #3b82f6); /* Degradado de azul */
+  }
+  
+  /* Caja del formulario */
+  .login-box {
+    background-color: #003366;
+    border-radius: 10px;
+    padding: 2.5rem;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Imagen del ícono */
+  .login-box img {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Título del formulario */
+  .login-box h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Estilos para los inputs */
+  .login-box input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .login-box input:focus {
+    border-color: #144ba3;
+    box-shadow: 0 0 0 3px rgba(21, 87, 192, 0.5);
+  }
+  
+  /* Estilo para el enlace de olvidar contraseña */
+  .login-box a {
+    display: block;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #e6e6e6;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+  }
+  
+  .login-box a:hover {
+    color: #d4d8e4;
+  }
+  
+  /* Botón de iniciar sesión */
+  .login-box button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .login-box button:hover {
+    background-color: #10b981;
+  }
