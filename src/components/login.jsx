@@ -5,7 +5,7 @@ const Login = () => {
     <div className="login-container">
       <div className="login-box">
         <img
-          src="src/img/Login (1).png"
+          src="src/img/LoginPro.jpeg"
           alt="Factura Icon"
           className="icon"
         />
