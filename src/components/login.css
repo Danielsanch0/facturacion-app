@@ -27,15 +27,6 @@
     margin-right: auto;
   }
   
-  /* Título del formulario */
-  .login-box h2 {
-    text-align: center;
-    font-size: 1.75rem;
-    font-weight: 600;
-    color: #1f2937;
-    margin-bottom: 1.5rem;
-  }
-  
   /* Estilos para los inputs */
   .login-box input {
     width: 100%;
