@@ -1,21 +1,26 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';  
 import './login.css';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();  
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Correo y contraseña fijos
+
     const validEmail = 'facturapro@gmail.com';
     const validPassword = 'factura123';
 
-    // Verifica si el correo y la contraseña son correctos
+    
     if (email === validEmail && password === validPassword) {
-      alert('¡Haz iniciado sesión correctamente!');
-      // Resetear los campos de inicio de sesión
+      alert('¡Has iniciado sesión correctamente!');
+     
+      navigate('/facturapro');  
+
+    
       setEmail('');
       setPassword('');
     } else {

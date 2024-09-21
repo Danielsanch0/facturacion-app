@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';  // Importa el componente Link
 import './FacturaPro.css';
 
 const FacturaPro = () => {
@@ -16,7 +17,6 @@ const FacturaPro = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Factura registrada:', factura);
-        // Aquí podrías agregar funcionalidad para guardar la factura
         alert('Factura registrada con éxito');
     };
 
@@ -29,9 +29,15 @@ const FacturaPro = () => {
                 </div>
                 <nav>
                     <ul>
-                        <li>Registro de Facturas</li>
-                        <li>Control de Gastos</li>
-                        <li>Reportes Financieros</li>
+                        <li>
+                            <Link to="/facturapro">Registro de Facturas</Link> {/* Enlace a la página de facturas */}
+                        </li>
+                        <li>
+                            <Link to="/registro">Control de Gastos</Link> {/* Enlace a la página de control de gastos */}
+                        </li>
+                        <li>
+                            <Link to="/reportes">Reportes Financieros</Link> {/* Enlace a la página de reportes */}
+                        </li>
                     </ul>
                 </nav>
             </aside>
@@ -83,12 +89,18 @@ const FacturaPro = () => {
                         </label>
                         <div className="button-group">
                             <button type="submit" className="register-btn">Registrar</button>
-                            <button type="button" className="cancel-btn" onClick={() => setFactura({
-                                numero: '',
-                                monto: '',
-                                categoria: '',
-                                fecha: ''
-                            })}>Cancelar</button>
+                            <button 
+                                type="button" 
+                                className="cancel-btn" 
+                                onClick={() => setFactura({
+                                    numero: '',
+                                    monto: '',
+                                    categoria: '',
+                                    fecha: ''
+                                })}
+                            >
+                                Cancelar
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -98,3 +110,4 @@ const FacturaPro = () => {
 };
 
 export default FacturaPro;
+

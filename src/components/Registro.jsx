@@ -1,5 +1,6 @@
-import React from 'react'
-import './Registro.css'
+import React from 'react';
+import { Link } from 'react-router-dom';  // Importa el componente Link
+import './Registro.css';
 
 const Registro = () => {
   return (
@@ -10,9 +11,16 @@ const Registro = () => {
           <div className="role">Administrador</div>
         </div>
         <ul className="menu">
-          <li className="active">Registro de Facturas</li>
-          <li>Control de Gastos</li>
-          <li>Reportes Financieros</li>
+          <li className="active">
+           
+          </li>
+          <Link to="/registro">Control de Gastos</Link> 
+          <li>
+          <Link to="/facturapro">Registro de Facturas</Link> 
+          </li>
+          <li>
+            <Link to="/reportes">Reportes Financieros</Link> 
+          </li>
         </ul>
       </div>
       <div className="main-content">
@@ -35,11 +43,12 @@ const Registro = () => {
             </tr>
           </thead>
           <tbody>
-            {/* Rows for invoices will go here */}
+            {/* Aquí puedes agregar filas dinámicamente con la información de las facturas */}
           </tbody>
         </table>
       </div>
     </div>
   );
 };
+
 export default Registro;
