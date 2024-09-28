@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';  
+import { useNavigate } from 'react-router-dom';
 import './login.css';
 
 const Login = () => {
@@ -18,13 +18,16 @@ const Login = () => {
     if (email === validEmail && password === validPassword) {
       alert('¡Has iniciado sesión correctamente!');
      
-      navigate('/facturapro');  
+      navigate('/facturapro');
 
     
       setEmail('');
       setPassword('');
     } else {
       alert('Correo o contraseña no válidos');
+
+      setEmail('');
+      setPassword('');
     }
   };
 

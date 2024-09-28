@@ -2,6 +2,7 @@
     display: flex;
     height: 100vh;
     font-family: 'Arial', sans-serif;
+    flex-direction: row;
 }
 
 .sidebar {
@@ -14,6 +15,13 @@
     align-items: center;
 }
 
+.login{
+    width: 180px;
+    height: 100rpx;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
 .admin-icon {
     text-align: center;
     margin-bottom: 20px;
@@ -44,10 +52,11 @@
     flex-grow: 1;
     padding: 20px;
     background-color: #f2f2f2;
+    overflow-y: auto;
 }
 
 h1 {
-    color: #4a4a4a;
+    color: #003366;
     font-size: 36px;
 }
 
@@ -101,4 +110,86 @@ input {
 
 .register-btn:hover, .cancel-btn:hover {
     opacity: 0.8;
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* Tablets (hasta 768px) */
+@media (max-width: 768px) {
+    .factura-pro {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .sidebar nav ul li {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .form-container {
+        padding: 15px;
+    }
+
+    input {
+        padding: 8px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .register-btn, .cancel-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Móviles (hasta 480px) */
+@media (max-width: 480px) {
+    .sidebar {
+        display: none; /* Escondemos la sidebar en pantallas muy pequeñas */
+    }
+
+    .factura-pro {
+        padding: 0;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .register-btn, .cancel-btn {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
 }

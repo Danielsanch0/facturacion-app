@@ -1,6 +1,6 @@
 /* CSS Variables for colors */
 :root {
-    --primary-color: #007bff;
+    --primary-color: #003366;
     --secondary-color: #f4f4f4;
     --hover-color: #0056b3;
     --header-bg-color: #e7f1ff;
@@ -10,6 +10,14 @@
     --sidebar-item-hover-bg: #1a73e8;
   }
   
+.login{
+  width: 180px;
+    height: 100rpx;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
   /* Global styles */
   body {
     font-family: Arial, sans-serif;
@@ -95,7 +103,7 @@
   }
   
   .title {
-    font-size: 24px;
+    font-size: 36px;
     color: var(--primary-color);
     margin-right: 20px;
     flex: 1;

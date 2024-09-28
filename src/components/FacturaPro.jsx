@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';  // Importa el componente Link
+import { useState } from 'react';
+import { Link } from 'react-router-dom'; // Importa el componente Link
 import './FacturaPro.css';
 
 const FacturaPro = () => {
@@ -24,26 +24,26 @@ const FacturaPro = () => {
         <div className="factura-pro">
             <aside className="sidebar">
                 <div className="admin-icon">
-                    <span role="img" aria-label="admin">👤</span>
-                    <p>Administrador</p>
+                <img src="src/img/LoginPro.jpeg" alt="Profile Icon" className="login" />
                 </div>
+                    <p>Administrador</p>
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/facturapro">Registro de Facturas</Link> {/* Enlace a la página de facturas */}
+                            <Link to="/facturapro">Registro de Facturas</Link>
                         </li>
                         <li>
-                            <Link to="/registro">Control de Gastos</Link> {/* Enlace a la página de control de gastos */}
+                            <Link to="/registro">Control de Gastos</Link>
                         </li>
                         <li>
-                            <Link to="/reportes">Reportes Financieros</Link> {/* Enlace a la página de reportes */}
+                            <Link to="/reporte">Reportes Financieros</Link>
                         </li>
                     </ul>
                 </nav>
             </aside>
 
             <main className="main-content">
-                <h1>Factura Pro</h1>
+                <h1>Registros de Factura</h1>
                 <div className="form-container">
                     <h2>Registro y Almacenamiento de factura</h2>
                     <form onSubmit={handleSubmit}>
