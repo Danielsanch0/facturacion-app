@@ -1,0 +1,84 @@
+/* Estilos para el contenedor principal */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f6f7f8, #3b82f6); /* Degradado de azul */
+}
+
+/* Caja del formulario */
+.login-box {
+    background-color: #003366;
+    border-radius: 10px;
+    padding: 2.5rem;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen del ícono */
+.login-box img {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos para los inputs */
+.login-box input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+.login-box input:focus {
+    border-color: #144ba3;
+    box-shadow: 0 0 0 3px rgba(21, 87, 192, 0.5);
+}
+
+/* Botón de registrar */
+.login-box button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+}
+
+.login-box button:hover {
+    background-color: #10b981;
+}
+
+/* Añadir este estilo para la alerta */
+.alert-box {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.alert-box button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

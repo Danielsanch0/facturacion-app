@@ -1,34 +1,22 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './login.css';
+import './RegistroUsuario.css';
 
-const Login = () => {
+const RegistroUsuario = () => {
+  const [nombre, setNombre] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [alertMessage, setAlertMessage] = useState('');
   const [showAlert, setShowAlert] = useState(false);
-  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    const validEmail = 'facturapro@gmail.com';
-    const validPassword = 'factura123';
-
-    if (email === validEmail && password === validPassword) {
-      setAlertMessage('¡Has iniciado sesión correctamente!');
-      setShowAlert(true);
-      navigate('/facturapro');
-
-      setEmail('');
-      setPassword('');
-    } else {
-      setAlertMessage('Correo o contraseña no válidos');
-      setShowAlert(true);
-
-      setEmail('');
-      setPassword('');
-    }
+    // Aquí puedes agregar la lógica para manejar el registro del usuario
+    setAlertMessage('¡Registro exitoso!'); // Mensaje de éxito
+    setShowAlert(true);
+    // Reiniciar campos
+    setNombre('');
+    setEmail('');
+    setPassword('');
   };
 
   const closeAlert = () => {
@@ -45,6 +33,13 @@ const Login = () => {
         />
         <form onSubmit={handleSubmit}>
           <input
+            type="text"
+            placeholder="Nombre"
+            value={nombre}
+            onChange={(e) => setNombre(e.target.value)}
+            required
+          />
+          <input
             type="email"
             placeholder="Correo Electrónico"
             value={email}
@@ -58,8 +53,7 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          <a href="#">¿Olvidaste tu contraseña?</a>
-          <button type="submit">Iniciar Sesión</button>
+          <button type="submit">Registrar</button>
         </form>
       </div>
       {showAlert && (
@@ -72,4 +66,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default RegistroUsuario;
