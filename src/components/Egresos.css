@@ -1,0 +1,129 @@
+/* Estilo para el contenedor principal */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+
+.sidebar {
+    width: 250px;
+    background-color: #002855;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.profile img {
+    width: 100px;
+    margin-bottom: 20px;
+    height: 100px;
+
+}
+
+
+.profile p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.menu li {
+    margin: 15px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+}
+
+
+.menu li a {
+    text-decoration: none;
+    color: #AA00FF;
+    font-size: 16px;
+}
+
+
+.menu li a:hover {
+    color: #FFFFFF;
+}
+
+
+.main-content {
+    flex: 1;
+    background-color: #F1F1F1;
+    padding: 20px;
+}
+
+.main-content h1 {
+    color: #002855;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.report {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.section {
+    background-color: white;
+    border: 1px solid #002855;
+    padding: 20px;
+    width: 45%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #002855;
+    margin-bottom: 10px;
+}
+
+
+.download-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.download-icons img {
+    width: 40px;
+    cursor: pointer;
+}
+
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.guardar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.cancelar {
+    background-color: #FF5733;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}

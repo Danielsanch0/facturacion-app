@@ -36,7 +36,7 @@ const FacturaPro = () => {
                             <Link to="/registro">Control de Gastos</Link>
                         </li>
                         <li>
-                            <Link to="/reporte">Reportes Financieros</Link>
+                            <Link to="/Egresos">Reportes Financieros</Link>
                         </li>
                     </ul>
                 </nav>

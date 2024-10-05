@@ -10,10 +10,10 @@ const RegistroUsuario = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes agregar la lógica para manejar el registro del usuario
-    setAlertMessage('¡Registro exitoso!'); // Mensaje de éxito
+ 
+    setAlertMessage('¡Registro exitoso!')
     setShowAlert(true);
-    // Reiniciar campos
+  
     setNombre('');
     setEmail('');
     setPassword('');

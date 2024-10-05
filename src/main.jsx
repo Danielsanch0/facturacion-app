@@ -5,14 +5,16 @@ import {
   Route,
   Routes,
 } from 'react-router-dom';
-import './components/RegistroUsuario.css';
+import Egresos from './components/Egresos';
 import FacturaPro from './components/FacturaPro';
-import './components/FacturaPro.css';
 import Login from './components/login';
 import Registro from './components/Registro';
 import Reporte from './components/Reporte';
 import RegistroUsuario from './components/RegistroUsuario';
 import './index.css';
+import './components/FacturaPro.css';
+import './components/RegistroUsuario.css';
+import './components/Egresos.css';
 
 
 
@@ -28,6 +30,7 @@ root.render(
         <Route path="/registro" element={<Registro />} />
         <Route path="/Usuario" element={<RegistroUsuario />} />
         <Route path="/reporte" element={<Reporte />} />
+        <Route path="/Egresos" element={<Egresos/>} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
